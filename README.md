@@ -1,3 +1,23 @@
+# CatalystNeuro chatbot
+
+1. Create a Heroku app
+2. Add the following ENV vars in `Settings > Config Vars`:
+    - OPENAI_API_KEY
+    - BEARER_TOKEN
+    - DATASTORE
+    - QDRANT_URL
+    - QDRANT_API_KEY
+    - QDRANT_COLLECTION
+3. Update `ai-plugin.json` with names, descriptions and app url
+4. Update `.well-known/openai.yaml` in the `info` section
+5. Update `Makefile` with the correct app name (if using Heroku)
+
+Now, for every change in the code, you need to:
+1. Login with  heroku cli (if you haven't already): `make heroku-login`
+2. Re-build the image: `docker build --platform linux/amd64 -t catalystneuro-chatbot .`
+3. Push the image to Heroku: `make heroku-push`
+
+
 # ChatGPT Retrieval Plugin
 
 > **Join the [ChatGPT plugins waitlist here](https://openai.com/waitlist/plugins)!**

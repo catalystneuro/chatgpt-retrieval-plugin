@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "name_for_model": "NWB Search",
+  "name_for_model": "NWB_Search",
   "name_for_human": "Catalystneuro Plugin API",
   "description_for_model": "Plugin for searching through the NWB, Neuroconv and Spikeinterface documents to find answers to questions and retrieve relevant information. Use it whenever a user asks something about: NWB, PyNWB, NeuroConv or SpikeInterface.",
   "description_for_human": "A retrieval API for querying and filtering documents from Neuroconv, SpikeInterface and Pynwb.",
