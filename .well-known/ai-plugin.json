@@ -1,19 +1,19 @@
 {
   "schema_version": "v1",
-  "name_for_model": "retrieval",
-  "name_for_human": "Retrieval Plugin",
-  "description_for_model": "Plugin for searching through the user's documents (such as files, emails, and more) to find answers to questions and retrieve relevant information. Use it whenever a user asks something that might be found in their personal information.",
-  "description_for_human": "Search through your documents.",
+  "name_for_model": "NWB Search",
+  "name_for_human": "Catalystneuro Plugin API",
+  "description_for_model": "Plugin for searching through the NWB, Neuroconv and Spikeinterface documents to find answers to questions and retrieve relevant information. Use it whenever a user asks something about: NWB, PyNWB, NeuroConv or SpikeInterface.",
+  "description_for_human": "A retrieval API for querying and filtering documents from Neuroconv, SpikeInterface and Pynwb.",
   "auth": {
     "type": "user_http",
     "authorization_type": "bearer"
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-app-url.com/.well-known/openapi.yaml",
+    "url": "https://catalystneuro-chatbot.herokuapp.com/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://your-app-url.com/.well-known/logo.png",
-  "contact_email": "hello@contact.com", 
+  "logo_url": "https://catalystneuro-chatbot.herokuapp.com/.well-known/logo.png",
+  "contact_email": "hello@contact.com",
   "legal_info_url": "http://example.com/legal-info"
 }
